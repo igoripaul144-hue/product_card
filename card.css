@@ -1,0 +1,152 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    
+}
+
+main{
+    border-radius: 24px;
+    background-color:white;
+    align-self: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 14px;
+    font-family: "montserrat", "fraunces";
+    display: flex;
+width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.right {
+    justify-self: right;
+}
+
+ #desktop {
+    display: block;
+}
+
+#mobile {
+    display: none;
+}
+
+@media ( max-width:708px) {
+    #desktop{
+        display: none;
+    }
+    #phone{
+        display: block;
+    }
+}
+@media (orientation: portrait) and (max-width:320px) {
+    #desktop{
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+
+}
+@media( min-width:1024px) and (orientation: landscape){
+    #desktop{
+        display: block;
+    }
+    #mobile{
+        display: none;
+    }
+}
+
+@media ( max-width:480px) and (orientation: portrait) {
+    main{flex-direction: column; 
+width: auto;
+margin: 20px auto;
+display: flex;
+align-items: center;
+ overflow: visible;
+    justify-self: center;
+    padding: auto;
+}
+#desktop {  
+    width: 100%;
+}
+#mobile {
+    width: 100%;
+    max-width: auto;
+    justify-self: center;
+    align-content: center;
+    border-radius: 16px 16px 0 0;
+}
+.right{
+    text-align: center;
+}
+
+}
+
+.heading {
+    justify-self: left;
+    padding: 20px ;
+    font-family: "montserrat";
+    font-weight: 500;
+    font-size: 24px;
+    color:hsl(228, 12%, 48%) ;
+}
+h1 {
+    font-family:"fraunces" ;
+    font-weight:  50px;
+    font-size: 30px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin-left: 10px;
+
+}
+#desktop {
+    max-width: 400px;
+    border-radius: 16px;
+    justify-self: left;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+.right{
+ justify-content: center;
+ justify-self: center;
+ align-content: center;
+ align-self: center;
+ text-align: center;
+
+}
+
+.text {
+        color:hsl(228, 12%, 48%) ;
+        margin-left: 20px;
+
+}
+.number {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+   
+
+}
+#amount {
+    font-size: bold;
+    justify-self: left;
+    align-self: auto;
+    text-align: left;
+   color: hsl(158, 36%, 37%);
+   padding: 10px;
+}
+.score {
+        color: hsl(228, 12%, 48%) ;
+        justify-self: right;
+    
+}
+
+h3 {
+    justify-self: center;
+    align-self: center;
+    background-color: hsl(158, 42%, 18%);
+    color: white;
+    border-radius: 16px;
+    padding: 10px;
+}
