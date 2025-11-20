@@ -4,7 +4,7 @@ body{
 }
 
 main{
-    border-radius: 24px;
+    border-radius: 16px;
     background-color:rgb(255, 255, 255);
     align-self: center;
     align-items: center;
@@ -31,9 +31,8 @@ width: 800px;
 
 @media (orientation: portrait) and (max-width:480px) {
        main {
-        display: flex;
-        flex-direction: column;
-        width: fit fit-content;
+       display: grid;
+        width: fit-content;
         max-width: 280px;
         height: auto;
         align-items: center;
@@ -43,7 +42,6 @@ width: 800px;
         margin: 20px auto;
         padding: 0;
         margin-top: 40px;
-        margin-right: 30px;
 
        }
   
