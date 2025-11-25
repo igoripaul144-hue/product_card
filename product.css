@@ -17,6 +17,19 @@ width: 800px;
   margin: 50px auto;
   overflow: hidden;
 }
+  h3 {
+        width: 20rem;
+        margin: 0 auto;
+        display: flex;
+        align-self: center;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 10px;
+  }
+    h3:hover {
+        cursor: pointer;
+      background-color: hsl(225, 18%, 13%);
+    }
 .score {
     text-decoration: line-through;
     text-decoration-style: double ;
@@ -41,7 +54,7 @@ width: 800px;
        main {
        display: grid;
         width: fit-content;
-        max-width: 300px;
+        max-width: 310px;
         height: auto;
         align-items: center;
         align-self: center;
@@ -73,7 +86,7 @@ width: 800px;
     }
     #mobile {
         display: block;
-        width: 300px;
+        width: 310px;
         align-self: center;
         border-radius: 16px 16px 0 0;
         margin-top: -23px;
@@ -91,6 +104,8 @@ width: 800px;
         align-self: center;
         text-align: center;
         justify-content: center;
+        margin-bottom: 10px;
+     
 
     }
     h3:hover {
@@ -102,7 +117,7 @@ width: 800px;
 }
  /* this is where the mobile view will stop*/
 
-@media( max-width:1124px) and (orientation: landscape){
+@media( max-width:1024px) and (orientation: landscape){
     #desktop{
         display: block;
         max-width: 50%;
@@ -124,26 +139,13 @@ width: 800px;
         align-self: center;
         justify-items: center;
         text-align: left;
-        margin-top: 50px;
     }
+      
+        
     #mobile{
         display: none;
     }
-    h3 {
-        width: 20rem;
-        margin: 0 auto;
-        display: flex;
-        align-self: center;
-        text-align: center;
-        justify-content: center;
-
-    }
-    h3:hover {
-        cursor: pointer;
-      background-color: hsl(225, 18%, 13%);
-    }
-
-   
+    
 }
  /* this is where the desktop view will stop*/
   
